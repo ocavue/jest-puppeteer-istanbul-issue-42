@@ -1,3 +1,4 @@
+const path = require("path")
 const webpack = require("webpack")
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
@@ -120,7 +121,7 @@ module.exports = [
         output: {
             path: PATHS.dist,
             filename: `${PATHS.assets}js/[name]-bundle.[hash].js`,
-            publicPath: process.env.NODE_ENV === "development" ? "/" : process.env.API_PREFIX + "/"
+            publicPath: "/"
         },
         plugins: [
             new HtmlWebpackPlugin({
