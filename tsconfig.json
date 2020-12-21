@@ -1,0 +1,38 @@
+{
+    "compilerOptions": {
+        "allowJs": false,
+        "target": "es6",
+        "module": "es6",
+        "rootDirs": [
+            "./src",
+            "./test"
+        ],
+        "lib": [
+            "es5",
+            "es6",
+            "dom"
+        ],
+        "jsx": "react",
+        "sourceMap": true,
+        "strict": true,
+        "noStrictGenericChecks": false,
+        "strictNullChecks": true,
+        "noImplicitReturns": true,
+        "moduleResolution": "node",
+        "outDir": "./dist/",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "typeRoots": [
+            "./custom_typings",
+            "./node_modules/@types"
+        ]
+    },
+    "exclude": [
+        "./node_modules"
+    ],
+    "include": [
+        "./src/**/*",
+        "./custom_typings/**/*",
+        "./test/**/*"
+    ]
+}
