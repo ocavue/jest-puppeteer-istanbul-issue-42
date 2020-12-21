@@ -1,5 +1,6 @@
 import React from 'react'
 
+// This function will be coveraged
 function doSomeMath1() {
     let sum = 0
     for (let i = 0; i < 100; i++) {
@@ -8,7 +9,7 @@ function doSomeMath1() {
     return sum
 }
 
-
+// This function will NOT be coveraged
 function doSomeMath2() {
     let sum = 0
     for (let i = 0; i < 100; i++) {
@@ -28,7 +29,7 @@ const HelloWorld = () => {
     return (
         <div className='hello-world'>
             <h1>Hello World</h1>
-            <p>The math result is {sum}</p>
+            <p>The math result is <span id="math-result">{sum}</span></p>
         </div>
     )
 }

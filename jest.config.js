@@ -1,5 +1,6 @@
 module.exports = {
-    preset: "./test/configs/testPreset",
+    // preset: "./test/configs/testPreset",
+    preset: "jest-puppeteer",
     testMatch: ["**/?(*.)+(spec|test).[t]s"],
     testPathIgnorePatterns: ["/node_modules/", "dist"],
     moduleFileExtensions: ["js", "ts", "tsx"],
@@ -8,7 +9,7 @@ module.exports = {
         "jest-puppeteer-allure/src/registerAllureReporter"
     ],
     setupFiles: [
-        "<rootDir>/test/__setups__/setupEnzyme.ts"
+        // "<rootDir>/test/__setups__/setupEnzyme.ts"
     ],
     coverageReporters: ["json", "text", "lcov"],
     reporters: ["default", "jest-puppeteer-istanbul/lib/reporter", "jest-puppeteer-allure"],
