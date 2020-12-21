@@ -22,3 +22,5 @@ const buildWebpackConfig = [merge(renderer, {
         })
     ]
 })]
+
+module.exports = new Promise(resolve => resolve(buildWebpackConfig));
